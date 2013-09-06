@@ -21,7 +21,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', function(req, res){
-  res.send(200, "Hello Foreman! App Name = " + process.env.APP_NAME);
+  res.send(200, "Hello Foreman! App Name = " + process.env.APP_NAME + ": Version two!");
 });
 
 http.createServer(app).listen(app.get('port'), function(){
